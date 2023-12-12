@@ -1,17 +1,50 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
 		{
-			"path": "pages/index/index",
+			"path": "pages/todo/todo",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "待办"
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的"
 			}
 		}
+
+
 	],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
+		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarBackgroundColor": "#00aeff",
+		"backgroundColor": "#00aeff"
 	},
-	"uniIdRouter": {}
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#00aeff",
+		"height": "50px",
+		"fontSize": "10px",
+		"iconWidth": "24px",
+		"spacing": "3px",
+		"list": [
+
+			{
+				"pagePath": "pages/todo/todo",
+				// "iconPath": "static/image/icon_API.png",
+				// "selectedIconPath": "static/image/icon_API_HL.png",
+				"text": "待办"
+			},
+			{
+				"pagePath": "pages/my/my",
+				// "iconPath": "static/image/icon_API.png",
+				// "selectedIconPath": "static/image/icon_API_HL.png",
+				"text": "我的"
+			}
+		]
+	}
+
 }
